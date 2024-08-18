@@ -1,0 +1,56 @@
+.list {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-bottom: 24px;
+    max-width: 430px;
+}
+
+.listItem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 18px;
+    border-radius: 100px;
+    background-color: #F2F4F7;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    text-align: center;
+    color: #101828;
+}
+
+.text {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+    text-align: left;
+    color: #101828;
+    margin-bottom: 24px;
+}
+
+.detailsList {
+    padding-top: 24px;
+    border-top: 1px solid #1018281A;
+}
+
+.detailsList li {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 12px;
+    padding: 8px 0;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: center;
+    color: #101828;
+}
+
+.detailsList li span {
+    margin-left: auto;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: center;
+    color: #101828;
+}

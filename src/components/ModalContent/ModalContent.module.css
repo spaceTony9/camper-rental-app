@@ -1,0 +1,155 @@
+.modalContent {
+    position: relative;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 90vw;
+    margin: 0 auto;
+}
+
+.closeButton {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #333;
+}
+
+.tabButton {
+    background: none;
+    border: none;
+    padding: 24px 0;
+    margin-right: 40px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+    text-align: center;
+    position: relative;
+    color: #101828;
+}
+
+.tabButton::after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    right: 0;
+    height: 5px;
+    background-color: transparent;
+    transition: background-color 0.3s;
+}
+
+.tabButton.active::after {
+    background-color: #E44848;
+}
+
+.name {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 30px;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.rating {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 10px;
+    margin-bottom: 16px;
+}
+
+.ratingText {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    color: #101828;
+}
+
+.ratingIcon {
+    width: 14px;
+    height: 14px;
+}
+
+.price {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 30px;
+    text-align: left;
+    margin-bottom: 24px;
+}
+
+.gallery {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 24px;
+}
+
+.galleryItem {
+    border-radius: 10px;
+    width: 100%;
+    max-width: 290px;
+    height: 310px;
+    object-fit: cover;
+}
+
+.desc {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    color: #475467;
+    margin-bottom: 44px;
+}
+
+.commentsWrapper {
+    display: flex;
+    flex-direction: column;
+    padding-top: 44px;
+    gap: 24px;
+    border-top: 1px solid #10182833;
+}
+
+@media (min-width: 1280px) {
+    .commentsWrapper {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .galleryItem {
+        width: 100%;
+        max-width: 290px;
+        height: 310px;
+    }
+}
+
+@media (max-width: 768px) {
+    .galleryItem {
+        height: 200px;
+    }
+
+    .desc {
+        font-size: 14px;
+        margin-bottom: 24px;
+    }
+
+    .tabButton {
+        font-size: 16px;
+        margin-right: 20px;
+    }
+
+    .ratingText {
+        font-size: 14px;
+    }
+
+    .name {
+        font-size: 20px;
+    }
+}

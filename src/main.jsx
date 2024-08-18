@@ -5,6 +5,7 @@ import Modal from 'react-modal';
 import { Provider } from 'react-redux';
 import { BrowserRouter } from 'react-router-dom';
 import { store } from './redux/store.js';
+import './main.css';
 
 Modal.setAppElement('#root');
 

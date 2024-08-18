@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import ContentList from '../../components/ContentList/ContentList.jsx';
+import css from './FavoritesPage.module.css';
 
 const FavoritesPage = () => {
   const [favourites, setFavourites] = useState(() => {
@@ -21,10 +22,12 @@ const FavoritesPage = () => {
   };
 
   return (
-    <ContentList
-      campers={favourites}
-      onRemoveFavourite={handleRemoveFavourite}
-    />
+    <div className={css.wrapper}>
+      <ContentList
+        campers={favourites}
+        onRemoveFavourite={handleRemoveFavourite}
+      />
+    </div>
   );
 };
 

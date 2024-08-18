@@ -1,0 +1,22 @@
+.header {
+    padding: 20px 0 20px 15px;
+    display: flex;
+    flex-direction: row;
+
+    gap: 50px;
+    border-bottom: 1px solid black;
+}
+
+.navWrapper {
+    display: flex;
+    gap: 15px;
+}
+
+.navLink {
+    font-size: 30px;
+}
+
+.header a.navLinkActive {
+    color: red;
+    font-weight: bold;
+}
